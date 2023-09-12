@@ -34,11 +34,11 @@ def snippet_3():
     # TODO: Modify the comparison operator below so the `assert` statement passes
     # TODO: Update the print statement to reflect the fact that a 'is equal to' b
 
-    a = 2
+    a = 1
     b = 1
-    c = (a > b)
+    c = (a == b)
 
-    print(f"The value of c ({c}) is True since a ({a}) is greater than b ({b}).")
+    print(f"The value of c ({c}) is True since a ({a}) is equal to b ({b}).")
     assert(c == True)  # <-- DO NOT EDIT THIS LINE
 
 
