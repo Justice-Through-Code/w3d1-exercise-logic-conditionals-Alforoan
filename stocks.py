@@ -41,4 +41,4 @@ def stock_purchases():
    
     print(f'{name} has ${dollars} to invest and can buy {max_shares} shares of {stock_name} at the current price of ${eval(stock_name.lower())}.')
 
-  
+
