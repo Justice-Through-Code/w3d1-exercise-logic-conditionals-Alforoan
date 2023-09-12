@@ -31,11 +31,9 @@ def stock_purchases():
         max_shares = dollars // facebook
     elif stock_name == "Google":
         max_shares = dollars // google
-    elif stock_name == "Microsoft":
-        max_shares = dollars // msft
     else:
-        max_shares = 0
-        print("Invalid stock name entered.")
+        max_shares = dollars // msft
+    
         
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
