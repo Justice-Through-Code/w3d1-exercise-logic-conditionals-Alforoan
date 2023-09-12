@@ -8,7 +8,7 @@ def snippet_1():
     u = 5
     v = 2
 
-    if u * v = 10:
+    if u * v == 10:
         print(f"The product of u ({u}) and v ({v}) is 10")
     else:
         print(f"The product of u ({u}) and v ({v}) is not 10")
@@ -23,10 +23,10 @@ def snippet_2():
     if z < x:
         print("z is less than x")
 
-    elif z > x and z < y
+    elif z > x and z < y:
         print("z is between x and y")
 
-    else
+    else:
         print("z is greater than y")
 
 
@@ -34,7 +34,7 @@ def snippet_3():
     # TODO: Modify the comparison operator below so the `assert` statement passes
     # TODO: Update the print statement to reflect the fact that a 'is equal to' b
 
-    a = 1
+    a = 2
     b = 1
     c = (a > b)
 
@@ -45,9 +45,10 @@ def snippet_3():
 def snippet_4():
     # TODO: Modify exactly one boolean operator in the assignment of d, so that d evaluates to False
 
-    d = (5 < 7) or not (8 < 20)
+    d = (5 < 7) and not (8 < 20)
 
     # TODO: Explain how d is set to False in a comment
+    # first statment is true since 5 is less than 7 but second statement is 8 > 20 if you take account of the 'not' word so since both statements aren't true, d is false
     assert(d == False)  # <-- DO NOT EDIT THIS LINE
 
 
@@ -58,7 +59,7 @@ def snippet_5():
     m = "GOAT"
     n = "goat"
 
-    o = (m == n)
+    o = (m != n)
 
     print (f"The value of o ({o}) is False since Python is case-sensitive.")
     assert(o == True)  # <-- DO NOT EDIT THIS LINE
