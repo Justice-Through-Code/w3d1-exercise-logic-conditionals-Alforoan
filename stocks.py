@@ -2,7 +2,7 @@
 def stock_purchases():
     amazon = 3000
     apple = 100
-    fb = 250
+    facebook = 250
     google = 1400
     msft = 200
 
@@ -28,7 +28,7 @@ def stock_purchases():
     elif stock_name == "Apple":
         max_shares = dollars // apple
     elif stock_name == "Facebook":
-        max_shares = dollars // fb
+        max_shares = dollars // facebook
     elif stock_name == "Google":
         max_shares = dollars // google
     elif stock_name == "Microsoft":
