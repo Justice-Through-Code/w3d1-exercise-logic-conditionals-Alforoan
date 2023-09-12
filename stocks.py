@@ -23,13 +23,24 @@ def stock_purchases():
 
     # 1.4 TODO: Use `if/elif/else` conditional logic to determine how much stock the client can buy,
     # and save it in a variable
-    if(dollars > stock_name):
-        share = int(dollars / stock_name)
+    if stock_name == "Amazon":
+        max_shares = dollars // amazon
+    elif stock_name == "Apple":
+        max_shares = dollars // apple
+    elif stock_name == "Facebook":
+        max_shares = dollars // fb
+    elif stock_name == "Google":
+        max_shares = dollars // google
+    elif stock_name == "Microsoft":
+        max_shares = dollars // msft
     else:
-        print("not enough money")
+        max_shares = 0
+        print("Invalid stock name entered.")
         
     # 1.5 TODO: Once you've calculated the number of stocks that can be purchased,
     # Use an f-string to print the result for the client, ala:
     # Alex has $5000 to invest and can buy 50 shares of Apple at the current price of $100.
-    print(f'{name} has {dollars} to invest and can buy {share} shares of {stock_name} at the current price of ${eval(stock_name)}')
-
+    if max_shares > 0:
+        print(f'{name} has ${dollars} to invest and can buy {max_shares} shares of {stock_name} at the current price of ${eval(stock_name.lower())}.')
+    else:
+        print(f'{name} does not have enough money')
